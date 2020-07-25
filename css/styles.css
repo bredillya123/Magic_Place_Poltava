@@ -1,1 +1,205 @@
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:"";content:none}table{border-collapse:collapse;border-spacing:0}*{padding:0;margin:0;border:0;outline:none;box-sizing:border-box}img{max-width:100%;height:auto}html{height:100%;scroll-behavior:smooth}body,html{min-height:100%;width:100%}.clear::after,.clear::before{content:" ";display:table}.clear::after{clear:both}/*# sourceMappingURL=styles.css.map */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Unicase&family=Didact+Gothic&family=Pacifico&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body, html {
+  min-height: 100%;
+  width: 100%;
+}
+
+.clear::after, .clear::before {
+  content: " ";
+  display: table;
+}
+
+.clear::after {
+  clear: both;
+}
+
+.navigation {
+  background: #4F016E;
+  width: 100%;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigation__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 800px;
+  height: 50px;
+}
+
+.navigation__element {
+  width: 150px;
+  font-size: 24px;
+  position: relative;
+}
+
+.navigation__text {
+  font-family: "Didact Gothic", sans-serif;
+  text-decoration: none;
+  color: #9676FA;
+  text-transform: uppercase;
+  line-height: 50px;
+  letter-spacing: 3px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  padding-bottom: 7px;
+}
+
+.navigation__text:hover {
+  color: #EFCFFA;
+  border-bottom: 3px solid #EFCFFA;
+}
+
+.navigation__text:checked {
+  color: #EFCFFA;
+  border-bottom: 3px solid #EFCFFA;
+}
+
+.logo {
+  font-family: 'Pacifico', cursive;
+  font-size: 24px;
+  text-decoration: none;
+  color: #EFCFFA;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.logo:hover {
+  color: #9676FA;
+}
+
+.instagram {
+  width: 42px;
+  height: 42px;
+  fill: #9676FA;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.instagram:hover {
+  fill: #EFCFFA;
+}
+
+.main {
+  background: url("../images/bg-main_medium.jpeg") no-repeat;
+  background-size: cover cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.main__box-foto {
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.main__box-title {
+  padding-top: 80px;
+}
+
+.main__text {
+  font-size: 36px;
+  font-family: 'Cormorant Unicase', serif;
+  padding: 20px;
+  border: 3px solid #4F016E;
+  color: #4F016E;
+}
+
+.main__img {
+  width: 280px;
+  height: 400px;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,23 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<meta name="description" content="Start Template">
-	<meta name="author" content="Admin">
-	<title>Start</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Start Template">
+  <meta name="author" content="Admin">
+  <title>Magic Place Poltava</title>
 
-	<link rel="icon" href="images/favicon.png">
-	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
-	<link rel="stylesheet" href="css/styles.min.css">
+  <link rel="icon" href="images/favicon.png">
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="css/styles.css">
 
-	<!--[if lt IE 9]>
+  <!--[if lt IE 9]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 </head>
+
 <body>
+  <div class="navigation">
+    <!-- Navigation block -->
+    <a class="logo" href="#main">Magic Place Poltava</a>
+    <ul class="navigation__block">
+      <li class="navigation__element navigation__element--active">
+        <a class="navigation__text" href="#about">О нас</a>
+      </li>
+      <li class="navigation__element navigation__element--active">
+        <a class="navigation__text" href="#price">Прайс</a>
+      </li>
+      <li class="navigation__element navigation__element--active">
+        <a class="navigation__text" href="#gallery">Галерея</a>
+      </li>
+      <li class="navigation__element navigation__element--active">
+        <a class="navigation__text" href="#contact">Контакты</a>
+      </li>
+    </ul>
 
+    <!-- Instagram button -->
+    <a href="https://www.instagram.com/Magic.place.poltava/">
+      <svg class="instagram">                   
+        <use xlink:href="./images/icons/insta.svg#instagram"></use>
+    </svg>
+    </a>     
+  </div>
 
+  <!-- Main block -->
+
+  <section id="main" class="main">
+    <div class="container">
+      <div class="row">
+        <div class="offset-8 col-4 main__box-foto">
+          <img class="main__img" src="./images/from marina/main_img.jpg" alt="master">
+        </div>
+        <div class="offset-7 col-5 main__box-title">
+          <h1 class="main__text">MAGIC PLACE POLTAVA</h1>
+        </div>
+       
+      </div>
+    </div>
+  </section>
 </body>
+
 </html>
