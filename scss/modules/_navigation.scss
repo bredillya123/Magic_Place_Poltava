@@ -17,7 +17,7 @@
     }
 
     &__element {
-        width: 150px;
+        width: auto;
         font-size: 24px;
         position: relative;
     }
@@ -64,5 +64,235 @@
 
     &:hover {
         fill: #EFCFFA;
+    }
+}
+
+// burger 
+
+.burger-section {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+}
+
+.menu-btn {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: #9676FA;
+    border-radius: 10%;
+    position: relative;
+}
+
+.burger_line {
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    left: 50%;
+    margin-left: -10px;
+    width: 20px;
+    height: 2px;
+    background-color: #4F016E;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        margin-top: -1px;
+        left: 50%;
+        margin-left: -10px;
+        width: 20px;
+        height: 2px;
+        background-color: #4F016E;
+        transform: translateY(-5px);
+        transition: .3s;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        margin-top: -1px;
+        left: 50%;
+        margin-left: -10px;
+        width: 20px;
+        height: 2px;
+        background-color: #4F016E;
+        transform: translateY(5px);
+        transition: .3s;
+    }
+}
+// animation to disabled span
+.menu-btn_active span {
+    height: 0;
+}
+// animation for before
+.menu-btn_active span::before{
+    transform: rotate(45deg);
+}
+// animation for before
+.menu-btn_active span::after{
+    transform: rotate(-45deg);
+}
+// block for text in burger
+.menu-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-nav_active {
+    position: relative;
+    top: 89px;
+    left: -7px;
+    padding-top: 19px;
+    width: 200px;
+    height: 220px;
+    background-color: #9676FA;
+    border-radius: 2%;
+}
+
+// text in teg a
+.menu-nav__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: right;
+    text-decoration: none;
+    color: #4F016E;
+    font-family: "Didact Gothic", sans-serif;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+// for animation text defoult
+.menu-nav__link {
+    transition: .3s;
+    transform-origin: left center;
+    transform: translateX(-10%);
+    opacity: 0;
+}
+// for animation on click
+.menu-nav__link_active {
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+// for mobile screens
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+    .navigation {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .navigation_medium {
+        display: none;
+    }
+
+    .menu-btn {
+        width: 42px;
+        height: 42px;
+    }
+    .instagram {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .menu-nav__link {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }    
+}
+
+// for tablet screens
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .navigation_medium {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .menu-nav_active {
+        top: 85px;
+    }
+
+    .menu-nav__link {
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+}
+
+// for tablet screens
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+
+    .navigation {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .navigation_medium {
+        display: flex;
+    }
+
+    .logo {
+        width: 150px;
+        margin-right: 20px;
+    }
+
+    .navigation__block {
+        width: auto;
+    }
+
+    .burger-section {
+        display: none;
+        width: 0px;
+        height: 0px;
+    }
+}
+
+// for big screens screens
+@media screen and (min-width: 1440px) and (max-width: 2048px) {
+
+    .navigation {
+        justify-content: space-around;
+    }
+
+    .navigation_medium {
+        width: 821px;
+        display: flex;
+        align-items: center;
+    }
+
+    .burger-section {
+        display: none;
+        width: 0px;
+        height: 0px;
+    }
+
+    .logo {
+        margin-right: 30px;
+    }
+
+    .navigation__block {
+        width: auto;
+    }
+
+    .navigation__element--active {
+        text-align: center;
+        margin-right: 20px;
+    }
+
+    .navigation__element--active:last-child {
+        margin-right: 0px;
+    }
+
+    .navigation__text {
+        font-size: 22px;
     }
 }

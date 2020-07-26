@@ -20,29 +20,46 @@
 
 <body>
   <div class="navigation">
+    <!-- section for burger for desktop and mobile screens -->
+    <div class="burger-section">
+      <div class="menu-block">
+        <a class="menu-btn" href="#">
+          <span class="burger_line"></span>
+        </a>
+        <nav class="menu-nav">
+          <a href="#about" class="menu-nav__link">О нас</a>
+          <a href="#price" class="menu-nav__link">Прайс</a>
+          <a href="#gallery" class="menu-nav__link">Галерея</a>
+          <a href="#contact" class="menu-nav__link">Кoнтакты</a>
+        </nav>
+
+      </div>
+    </div>
     <!-- Navigation block -->
-    <a class="logo" href="#main">Magic Place Poltava</a>
-    <ul class="navigation__block">
-      <li class="navigation__element navigation__element--active">
-        <a class="navigation__text" href="#about">О нас</a>
-      </li>
-      <li class="navigation__element navigation__element--active">
-        <a class="navigation__text" href="#price">Прайс</a>
-      </li>
-      <li class="navigation__element navigation__element--active">
-        <a class="navigation__text" href="#gallery">Галерея</a>
-      </li>
-      <li class="navigation__element navigation__element--active">
-        <a class="navigation__text" href="#contact">Контакты</a>
-      </li>
-    </ul>
+    <div class="navigation_medium">
+      <a class="logo" href="#main">Magic Place Poltava</a>
+      <ul class="navigation__block">
+        <li class="navigation__element navigation__element--active">
+          <a class="navigation__text" href="#about">О нас</a>
+        </li>
+        <li class="navigation__element navigation__element--active">
+          <a class="navigation__text" href="#price">Прайс</a>
+        </li>
+        <li class="navigation__element navigation__element--active">
+          <a class="navigation__text" href="#gallery">Галерея</a>
+        </li>
+        <li class="navigation__element navigation__element--active">
+          <a class="navigation__text" href="#contact">Контакты</a>
+        </li>
+      </ul>
+    </div>
 
     <!-- Instagram button -->
     <a href="https://www.instagram.com/Magic.place.poltava/">
-      <svg class="instagram">                   
+      <svg class="instagram">
         <use xlink:href="./images/icons/insta.svg#instagram"></use>
-    </svg>
-    </a>     
+      </svg>
+    </a>
   </div>
 
   <!-- Main block -->
@@ -56,10 +73,12 @@
         <div class="offset-7 col-5 main__box-title">
           <h1 class="main__text">MAGIC PLACE POLTAVA</h1>
         </div>
-       
+
       </div>
     </div>
-  </section>
+    <!-- scripts js/jquery -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 
 </html>
