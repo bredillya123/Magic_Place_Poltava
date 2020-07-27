@@ -12,6 +12,11 @@
         
     }
 
+    &__manicure {
+        background-color: #EFCFFA;
+        height: 50vh;
+    }
+
     &__title {
         padding-top: 75px;
         margin-bottom: 50px;
@@ -41,6 +46,24 @@
             top: 22%;
             right: 0%;
         }
+
+        &--manicure {
+            border: none;
+
+            &--big {
+                margin-top: 25px;
+                margin-left: 60%;
+                width: 220px;
+                height: 250px;
+            }
+
+            &--small {
+                width: 250px;
+                height: 150px;
+                top: 160px;
+                left: 110px;
+            }
+        }
     }
 
     &__info {
@@ -48,10 +71,22 @@
         line-height: 140.62%;
         font-family: 'Didact Gothic', sans-serif;
 
+        &--manicure {
+            color: #940080;
+        }
+
         &--title {
             font-size: 36px;
             margin-bottom: 45px; 
-            font-weight: bold;           
+            font-weight: bold; 
+            
+            &--manicure {
+                margin-top: 75px;
+                width: 230px;
+                font-weight: normal;
+                padding-bottom: 15px;
+                border-bottom: 2px solid #940080;
+            }
         }
 
         &--text {
@@ -64,6 +99,9 @@
 @media screen and (min-width: 320px) and (max-width: 767px) {
 
     .about {
+        &__manicure {
+            height: 100%;
+        }
 
         &__title {
             font-size: 36px;
@@ -78,6 +116,10 @@
         &__info {
             max-width: 90.7%;
             margin-bottom: 30px;
+
+            &--manicure {
+                margin-left: 8.333333%;
+            }
 
             &--title {
                 font-size: 24px;
@@ -97,6 +139,23 @@
             width: 190px;
             height: 240px;
 
+            &--manicure {
+
+                &--big {
+                    margin-bottom: 30%;
+                    margin-left: 85%;
+                    width: 140px;
+                    height: 200px;
+                }
+
+                &--small {
+                    width: 140px;
+                    height: 100px;
+                    top: 60%;
+                    left: 26%;
+                }
+            }
+
             &--second {
                 right: -67%;
             }
@@ -108,6 +167,9 @@
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
     .about {
+        &__manicure {
+            height: 100%;
+        }
 
         &__content {
             flex-direction: column-reverse;
@@ -117,6 +179,10 @@
         &__info {
             max-width: 90.7%;
             margin-bottom: 45px;
+
+            &--manicure {
+                margin-left: 8.333333%;
+            }
 
             &--title {
                 margin-bottom: 30px;
@@ -131,7 +197,20 @@
 
             &--second {
                 right: 0%;
-                left: 75%;
+                left: 60%;
+            }
+
+            &--manicure {
+
+                &--big {                    
+                    margin-bottom: 10%;
+                    width: 190px;
+                }
+
+                &--small {
+                    left: 90%;
+                    top: -33%;
+                }
             }
         }
     }
