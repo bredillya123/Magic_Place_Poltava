@@ -13,6 +13,7 @@
 
         &-title {
             padding-top: 80px;
+            margin-bottom: 100px;
         }
     }
 
@@ -30,3 +31,113 @@
         border-radius: 10px;
     }
 }
+
+// for mobile screens
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+    .main {
+        background: url('../images/bg-main_mobile.jpeg') no-repeat;
+
+        &__box {
+            &-foto {
+                width: 0px;
+                height: 0px;
+            }
+    
+            &-title {
+                margin-left: 20%;
+            }
+        }
+
+        &__text {
+            font-size: 36px;
+            padding: 20px;           
+            width: 205px;
+            height: 160px;
+            font-weight: bold;
+        }
+    
+        &__img {
+            display: none;
+        }
+    }     
+}
+
+// for tablet screens
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .main {
+        &__box {
+            &-foto {
+                margin-left: 0%;
+            }
+    
+            &-title {
+                padding-top: 50px;
+                margin-left: 0%;
+            }
+        }
+    
+        &__img {
+            height: 320px;
+        }
+
+        &__row {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-around;
+        }
+    }    
+}
+
+// for tablet screens
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+
+    .main {
+        &__box {
+            &-foto {
+                margin-left: 0%;
+            }
+    
+            &-title {
+                padding-top: 50px;
+                margin-left: 0%;
+            }
+        }
+
+        &__text {
+            width: 310px;
+        }
+    
+        &__img {            
+            width: 230px;
+            height: 325px;
+        }
+
+        &__row {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-around;
+        }
+    }
+    
+}
+
+// for Laptop L screen
+@media screen and (min-width: 1440px) and (max-width: 1536px) {
+    .main {
+        background: url('../images/bg-main_medium.jpeg') no-repeat;
+        height: 100%;
+    }
+    
+}
+
+// for full HD screen
+@media screen and (min-width: 1537px) and (max-width: 1920px) {
+
+    .main {
+        background: url('../images/bg-Main_2k.jpg') no-repeat;
+        height: 100%;
+    }
+}
+

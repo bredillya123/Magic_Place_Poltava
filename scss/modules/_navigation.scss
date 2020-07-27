@@ -1,4 +1,8 @@
 //styles navigatuion
+body {
+    z-index: 70;
+}
+
 .navigation {
     background: #4F016E;
     width: 100%;
@@ -75,6 +79,7 @@
     justify-content: center;
     align-items: center;
     transition: .3s;
+    display: none;
 }
 
 .menu-btn {
@@ -144,6 +149,7 @@
 }
 
 .menu-nav_active {
+    z-index: 99;
     position: relative;
     top: 89px;
     left: -7px;
@@ -187,6 +193,10 @@
         justify-content: space-around;
     }
 
+    .burger-section {
+        display: flex;
+    }
+
     .navigation_medium {
         display: none;
     }
@@ -213,6 +223,10 @@
         display: none;
     }
 
+    .burger-section {
+        display: flex;
+    }
+
     .navigation {
         display: flex;
         justify-content: space-around;
@@ -234,6 +248,10 @@
     .navigation {
         display: flex;
         justify-content: space-around;
+
+        &__element {
+            margin-right: 25px;
+        }
     }
 
     .navigation_medium {
@@ -257,7 +275,7 @@
 }
 
 // for big screens screens
-@media screen and (min-width: 1440px) and (max-width: 2048px) {
+@media screen and (min-width: 1440px) and (max-width: 1920px) {
 
     .navigation {
         justify-content: space-around;
@@ -290,9 +308,5 @@
 
     .navigation__element--active:last-child {
         margin-right: 0px;
-    }
-
-    .navigation__text {
-        font-size: 22px;
     }
 }
