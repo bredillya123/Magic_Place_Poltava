@@ -800,4 +800,110 @@ body {
     top: 48%;
   }
 }
+
+.price {
+  background: linear-gradient(89.95deg, #EFCFFA 30.72%, rgba(255, 255, 255, 0) 65.59%), linear-gradient(271.06deg, #CDC6F8 34.38%, rgba(255, 255, 255, 0) 105.35%), #FFFFFF;
+  font-family: "Didact Gothic", sans-serif;
+}
+
+.price__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.price__title {
+  color: #4F016E;
+  border-bottom: 2px solid #4F016E;
+  margin-bottom: 50px;
+}
+
+.price__title--sub {
+  margin-top: 0px;
+  color: rgba(148, 0, 128, 0.6);
+  border-bottom: 2px solid rgba(148, 0, 128, 0.6);
+}
+
+.price__title--shugar {
+  color: rgba(150, 118, 250, 0.6);
+  border-bottom: 2px solid rgba(150, 118, 250, 0.6);
+}
+
+.price__manicure {
+  width: 800px;
+  background: rgba(148, 0, 128, 0.6);
+  padding: 35px 25px;
+  margin-bottom: 50px;
+}
+
+.price__manicure--background {
+  height: 100%;
+  background: rgba(205, 198, 248, 0.5);
+  padding: 20px 35px;
+}
+
+.price__manicure--shugar {
+  background: rgba(150, 118, 250, 0.6);
+}
+
+.price__element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #f4f4f4;
+  font-size: 18px;
+  padding: 4px;
+  border-bottom: 1px solid #f4f4f4;
+  margin-bottom: 10px;
+}
+
+.price__text--cursive {
+  font-style: italic;
+}
+
+.price__text--small {
+  font-size: 14px;
+}
+
+.price__cost {
+  text-align: end;
+  font-weight: bold;
+}
+
+.call {
+  text-decoration: none;
+  font-size: 18px;
+  color: #9676FA;
+  padding: 13px 21px;
+  background: #4F016E;
+  border: 3px solid #9676FA;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: .5s;
+  transition: .5s;
+  margin-bottom: 50px;
+}
+
+.call:hover {
+  color: #4F016E;
+  border: 3px solid #4F016E;
+  background-color: rgba(150, 118, 250, 0.6);
+}
+
+.call:active {
+  background-color: #fff;
+}
 /*# sourceMappingURL=styles.css.map */
