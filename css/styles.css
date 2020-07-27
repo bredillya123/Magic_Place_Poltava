@@ -582,6 +582,11 @@ body {
   height: 50vh;
 }
 
+.about__shugaring {
+  background-color: rgba(200, 156, 248, 0.71);
+  height: 50vh;
+}
+
 .about__title {
   padding-top: 75px;
   margin-bottom: 50px;
@@ -631,6 +636,14 @@ body {
   left: 110px;
 }
 
+.about__foto--shugaring--big {
+  margin-left: 0%;
+}
+
+.about__foto--shugaring--small {
+  left: 200px;
+}
+
 .about__info {
   color: #fff;
   line-height: 140.62%;
@@ -663,6 +676,9 @@ body {
   .about__manicure {
     height: 100%;
   }
+  .about__shugaring {
+    height: 100%;
+  }
   .about__title {
     font-size: 36px;
     width: 160px;
@@ -676,12 +692,21 @@ body {
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
+  .about__content--shugaring {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
   .about__info {
     max-width: 90.7%;
     margin-bottom: 30px;
   }
   .about__info--manicure {
     margin-left: 8.333333%;
+  }
+  .about__info--shugaring {
+    max-width: 76.7%;
   }
   .about__info--title {
     font-size: 24px;
@@ -709,6 +734,12 @@ body {
     top: 60%;
     left: 26%;
   }
+  .about__foto--shugaring--big {
+    margin-left: 0%;
+  }
+  .about__foto--shugaring--small {
+    left: 130px;
+  }
   .about__foto--second {
     right: -67%;
   }
@@ -716,6 +747,9 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .about__manicure {
+    height: 100%;
+  }
+  .about__shugaring {
     height: 100%;
   }
   .about__content {
@@ -726,6 +760,12 @@ body {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+  }
+  .about__content--shugaring {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
   .about__info {
     max-width: 90.7%;
@@ -751,6 +791,13 @@ body {
   .about__foto--manicure--small {
     left: 90%;
     top: -33%;
+  }
+  .about__foto--shugaring--big {
+    margin-left: 0%;
+  }
+  .about__foto--shugaring--small {
+    left: 41%;
+    top: 48%;
   }
 }
 /*# sourceMappingURL=styles.css.map */
