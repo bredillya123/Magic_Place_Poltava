@@ -311,3 +311,27 @@ body {
         margin-right: 0px;
     }
 }
+
+// for 4K
+@media screen and (min-width: 1921px) and (max-width: 2560px) {
+
+    .navigation {
+        justify-content: space-around;
+    }
+
+    .navigation_medium {
+        width: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 36px;
+        margin-right: 40px;
+    }
+
+    .navigation__text {
+        font-size: 36px;
+        margin-right: 40px;
+    }
+}
