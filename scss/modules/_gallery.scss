@@ -1,0 +1,157 @@
+.gallery {
+    background: #EBAFDE;
+    background-size: cover cover;
+    width: 100%;
+    height: 100%;
+
+    &__row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__content {
+        display: flex;
+        margin-bottom: 50px;
+    }
+
+    &__foto {
+				cursor: pointer;
+				filter: drop-shadow(0px 4px 25px rgba(0, 0, 0, 0.5));
+				transition: .5s;
+				
+				&:hover{
+					filter: drop-shadow(0px 4px 25px #000000);
+				}
+
+				&:active {
+					filter: drop-shadow(0px 4px 25px #000000);
+				}
+
+        &--main {
+            width: 540px;
+            height: 402px;
+        }
+
+        &--ather {
+            width: 260px;
+            height: 185px;
+            margin-right: 30px;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__col {
+        display: flex;
+		}
+		
+		&__slide {
+			display: none;
+
+			&--active {
+				display: flex;
+			}
+		}
+}
+
+.text {
+	&__load {
+		display: inline;
+
+		&--pasive {
+			display: none;
+		}
+	}
+
+	&__unload {
+		display: none;
+
+		&--active {
+			display: inline;
+		}
+	}
+}
+
+.button__load--more {
+	display: block;
+	text-decoration: none;
+  font-size: 18px;
+  color: #9676FA;
+  padding: 13px 21px;
+  background: #4F016E;
+  border: 3px solid #9676FA;
+  transition: .5s;
+	margin-bottom: 50px;
+	font-family: 'Didact Gothic', sans-serif;
+	
+	&:hover {
+		color: #4F016E;
+		border: 3px solid #4F016E;
+		background-color: rgba(150, 118, 250, 0.6);
+	}
+
+	&:active {
+		background-color: #fff;
+	}
+}
+
+
+// for mobile screens
+@media screen and (min-width: 320px) and (max-width: 767px) {
+	.gallery {
+
+		&__content {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		&__col {
+			max-width: 100%;
+			justify-content: center;
+
+			&-3 {
+				max-width: 100%;
+				display: flex;
+				flex-direction: column;
+			}
+		}
+
+		&__foto {
+			height: auto;
+
+			&--ather {
+				margin-right: 0px;
+			}
+
+			&--main {
+				margin-bottom: 30px;
+				width: 250px;
+				height: 200px;
+			}
+		}
+
+		&__slide {
+
+			&--active {
+				display: flex;
+			}
+		}
+	}
+}
+
+// for tablet screens
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	.gallery {
+
+		&__foto {
+
+			&--main {
+				height: 345px;
+			}
+
+			&--ather {
+				height: 156px;
+			}
+		}
+	}
+}
