@@ -1177,7 +1177,7 @@ body {
 }
 
 .contact {
-  background: url("/images/contact/bg_contact1536.jpeg") no-repeat;
+  background: url("../images/contact/bg_contact1536.jpeg") no-repeat;
   background-size: cover;
   height: 100%;
 }
@@ -1288,7 +1288,7 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .contact {
-    background: url("/images/contact/1024x768_1500772_[www.ArtFile.ru].jpeg") no-repeat;
+    background: url("../images/contact/1024x768_1500772_[www.ArtFile.ru].jpeg") no-repeat;
     background-size: cover;
   }
   .contact__call {
