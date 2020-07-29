@@ -75,12 +75,12 @@
 .button__load--more {
 	display: block;
 	text-decoration: none;
-  font-size: 18px;
-  color: #9676FA;
-  padding: 13px 21px;
-  background: #4F016E;
-  border: 3px solid #9676FA;
-  transition: .5s;
+	font-size: 18px;
+	color: #9676FA;
+	padding: 13px 21px;
+	background: #4F016E;
+	border: 3px solid #9676FA;
+	transition: .5s;
 	margin-bottom: 50px;
 	font-family: 'Didact Gothic', sans-serif;
 	
@@ -136,6 +136,11 @@
 				display: flex;
 			}
 		}
+	}
+
+	.button__load--more {
+		width: 80%;
+		text-align: center;
 	}
 }
 

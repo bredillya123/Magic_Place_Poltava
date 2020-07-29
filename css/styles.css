@@ -683,6 +683,7 @@ body {
 
 .about__info--manicure {
   color: #940080;
+  margin-bottom: 30px;
 }
 
 .about__info--title {
@@ -928,6 +929,7 @@ body {
   -webkit-transition: .5s;
   transition: .5s;
   margin-bottom: 50px;
+  font-family: 'Didact Gothic', sans-serif;
 }
 
 .call:hover {
@@ -1152,6 +1154,10 @@ body {
     display: -ms-flexbox;
     display: flex;
   }
+  .button__load--more {
+    width: 80%;
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -1160,6 +1166,126 @@ body {
   }
   .gallery__foto--ather {
     height: 156px;
+  }
+}
+
+.contact {
+  background: url("/images/contact/bg_contact1536.jpeg") no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.contact__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.contact__block {
+  margin-top: 200px;
+  margin-bottom: 100px;
+  width: 700px;
+  height: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: rgba(244, 244, 244, 0.7);
+  border-radius: 5px;
+}
+
+.contact__title {
+  padding-top: 30px;
+  margin-bottom: 50px;
+  width: 250px;
+  text-align: center;
+  font-size: 48px;
+  line-height: 140.62%;
+  color: #940080;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #940080;
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+.contact__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact__element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+}
+
+.contact__icons {
+  margin-right: 20px;
+  width: 55px;
+  height: 51px;
+  -webkit-filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.5));
+  fill: #940080;
+}
+
+.contact__use {
+  text-decoration: none;
+}
+
+.contact__text {
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 24px;
+  color: #940080;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .contact__block {
+    margin-top: 100px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .contact__icons {
+    width: 40px;
+    height: 41px;
+    margin-left: 10px;
+  }
+  .contact__call {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .contact {
+    background: url("/images/contact/1024x768_1500772_[www.ArtFile.ru].jpeg") no-repeat;
+    background-size: cover;
+  }
+  .contact__call {
+    font-size: 24px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

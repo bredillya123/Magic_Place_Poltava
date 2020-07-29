@@ -1,0 +1,101 @@
+.contact {
+    background: url('/images/contact/bg_contact1536.jpeg') no-repeat;
+    background-size: cover;
+    height: 100%;
+
+    &__row {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    &__block {
+        margin-top: 200px;
+        margin-bottom: 100px;
+        width: 700px;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: rgba(244, 244, 244, 0.7);
+        border-radius: 5px;
+    }
+
+    &__title {
+        padding-top: 30px;
+        margin-bottom: 50px;
+        width: 250px;
+        text-align: center;
+        font-size: 48px;
+        line-height: 140.62%;
+        color: #940080;
+        padding-bottom: 5px;
+        border-bottom: 2px solid #940080;
+        font-family: 'Didact Gothic', sans-serif;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__element {
+        display: flex;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    &__icons {
+        margin-right: 20px;
+        width: 55px;
+        height: 51px;
+        filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.5));
+        fill: #940080;
+    }
+
+    &__use {
+        text-decoration: none;
+    }
+
+    &__text {
+        font-family: 'Didact Gothic', sans-serif;
+        font-size: 24px;
+        color: #940080;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+}
+
+// for mobile screens
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+    .contact {
+
+        &__block {
+            margin-top: 100px;
+            justify-content: space-between;
+        }
+
+        &__icons {
+            width: 40px;
+            height: 41px;
+            margin-left: 10px;
+        }
+
+        &__call {
+            width: 90%;
+        }
+    }
+}
+
+// for mobile screens
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .contact {
+        background: url('/images/contact/1024x768_1500772_[www.ArtFile.ru].jpeg') no-repeat;
+        background-size: cover;
+        
+        &__call {
+            font-size: 24px;
+        }
+    }
+}
