@@ -35,6 +35,11 @@
         font-family: 'Didact Gothic', sans-serif;
     }
 
+    &__geo {
+        text-decoration: none;
+        color: #940080;
+    }
+
     &__info {
         display: flex;
         flex-direction: column;
