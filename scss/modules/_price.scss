@@ -27,6 +27,16 @@
             color: rgba(150, 118, 250, 0.6);
             border-bottom: 2px solid rgba(150, 118, 250, 0.6);
         }
+
+        &--pedicure {
+            margin-top: 0px;
+            color:#9676FA;
+            border-bottom: 2px solid #9676FA;
+        }
+    }
+
+    &__hidenblock {
+        opacity: 0;
     }
 
     &__manicure {
@@ -34,6 +44,10 @@
         background: rgba(148, 0, 128, 0.6);
         padding: 35px 25px;
         margin-bottom: 50px;
+
+        &--pedicure {
+            background: #9676FA;
+        }
 
         &--background {
             height: 100%;
@@ -103,6 +117,10 @@
             flex-direction: column;
         }
 
+        &__hidenblock {
+            display: none;
+        }
+
         &__title{
             &--sub {
                 margin-right: 0px;
@@ -149,7 +167,7 @@
 
     .price {
         &__row {
-            width: auto;
+            width: 100%;
             flex-direction: column;
             align-items: center;
         }

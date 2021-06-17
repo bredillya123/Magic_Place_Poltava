@@ -486,6 +486,7 @@ body {
   padding: 20px;
   border: 3px solid #4F016E;
   color: #4F016E;
+  text-align: center;
 }
 
 .main__img {
@@ -512,7 +513,7 @@ body {
     font-size: 36px;
     padding: 20px;
     width: 205px;
-    height: 160px;
+    height: auto;
     font-weight: bold;
   }
   .main__img {
@@ -880,11 +881,25 @@ body {
   border-bottom: 2px solid rgba(150, 118, 250, 0.6);
 }
 
+.price__title--pedicure {
+  margin-top: 0px;
+  color: #9676FA;
+  border-bottom: 2px solid #9676FA;
+}
+
+.price__hidenblock {
+  opacity: 0;
+}
+
 .price__manicure {
   width: 800px;
   background: rgba(148, 0, 128, 0.6);
   padding: 35px 25px;
   margin-bottom: 50px;
+}
+
+.price__manicure--pedicure {
+  background: #9676FA;
 }
 
 .price__manicure--background {
@@ -955,6 +970,9 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .price__hidenblock {
+    display: none;
+  }
   .price__title--sub {
     margin-right: 0px;
   }
@@ -989,7 +1007,7 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .price__row {
-    width: auto;
+    width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
